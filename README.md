@@ -1,61 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>README - Previsão de Vendas de Combustível</title>
-</head>
-<body>
-    <h1>Previsão de Vendas de Combustível</h1>
-    <p>Este projeto visa desenvolver um modelo de previsão de vendas de combustível com base em dados históricos. O modelo utiliza a técnica de regressão florestal aleatória (Random Forest) para fazer previsões precisas sobre as vendas futuras com base em informações como data da coleta e valores de venda.</p>
+# Previsão de Vendas de Combustível
 
-    <h2>Funcionalidades</h2>
-    <ul>
-        <li>Consulta dados históricos de vendas de combustível de um banco de dados Oracle.</li>
-        <li>Pré-processa os dados para prepará-los para a modelagem.</li>
-        <li>Treina um modelo de regressão florestal aleatória usando os dados de treinamento.</li>
-        <li>Avalia o desempenho do modelo usando métricas como Mean Squared Error (MSE), Mean Absolute Error (MAE) e R^2 Score.</li>
-        <li>Gera visualizações dos resultados do modelo.</li>
-    </ul>
+Este é um projeto de previsão de vendas de combustível usando aprendizado de máquina.
 
-    <h2>Pré-requisitos</h2>
-    <ul>
-        <li>Python 3.x</li>
-        <li>Bibliotecas Python: cx_Oracle, pandas, numpy, scikit-learn, matplotlib, seaborn</li>
-    </ul>
+## Objetivo
 
-    <h2>Instalação</h2>
-    <ol>
-        <li>Clone o repositório para o seu ambiente local:</li>
-    </ol>
-    <pre><code>git clone https://github.com/seu-usuario/previsao-vendas-combustivel.git</code></pre>
-    <ol start="2">
-        <li>Instale as dependências do Python:</li>
-    </ol>
-    <pre><code>pip install -r requirements.txt</code></pre>
-    <ol start="3">
-        <li>Certifique-se de ter acesso ao banco de dados Oracle e atualize as credenciais de conexão no arquivo <code>main.py</code> conforme necessário.</li>
-    </ol>
+O objetivo deste projeto é prever as vendas de combustível com base em dados históricos de vendas.
 
-    <h2>Uso</h2>
-    <ol>
-        <li>Execute o arquivo <code>main.py</code> para iniciar o processo de previsão de vendas de combustível:</li>
-    </ol>
-    <pre><code>python main.py</code></pre>
-    <ol start="2">
-        <li>Aguarde o término da execução do programa. Uma vez concluído, você verá as métricas de avaliação do modelo e visualizações dos resultados.</li>
-    </ol>
+## Funcionalidades
 
-    <h2>Contribuindo</h2>
-    <p>Se você quiser contribuir para este projeto, siga estas etapas:</p>
-    <ol>
-        <li>Faça um fork do projeto</li>
-        <li>Crie sua própria branch (<code>git checkout -b feature/sua-feature</code>)</li>
-        <li>Faça commit das suas alterações (<code>git commit -am 'Adicione uma nova feature'</code>)</li>
-        <li>Faça push para a branch (<code>git push origin feature/sua-feature</code>)</li>
-        <li>Crie um novo Pull Request</li>
-    </ol>
+- Consulta dados históricos de vendas de combustível de um banco de dados Oracle.
+- Pré-processa os dados para prepará-los para a modelagem.
+- Treina um modelo de regressão florestal aleatória usando os dados de treinamento.
+- Avalia o desempenho do modelo usando métricas como Mean Squared Error (MSE), Mean Absolute Error (MAE) e R^2 Score.
+- Gera visualizações dos resultados do modelo.
 
-  
-</body>
-</html>
+## Pré-requisitos
+
+- Python 3.x
+- Bibliotecas Python: cx_Oracle, pandas, numpy, scikit-learn, matplotlib, seaborn
+
+## Conjunto de Dados
+
+Os dados utilizados neste projeto foram coletados do banco de dados Oracle e consistem em registros de vendas de combustível para os anos de 2022 e 2023.
+
+## Pré-processamento dos Dados
+
+Os dados foram pré-processados para transformar as datas em dias desde o início do intervalo e realizar outras etapas de limpeza e formatação necessárias.
+
+## Modelagem e Treinamento
+
+Um modelo de regressão foi treinado usando Random Forest Regressor com 100 estimadores. Os dados foram divididos em conjunto de treino e teste, e o modelo foi avaliado usando métricas como MSE, MAE e R².
+
+## Avaliação do Modelo
+
+O modelo alcançou os seguintes resultados na avaliação:
+- MSE: 0.33
+- MAE: 0.44
+- R²: 0.86
+
+## Resultados
+
+Os resultados da previsão foram plotados em um gráfico para visualização.
+
+## Próximos Passos
+
+- Explorar técnicas avançadas de modelagem para melhorar o desempenho do modelo.
+- Incorporar dados adicionais para enriquecer a análise.
+- Realizar análises de tendências e sazonalidade nos dados.
+
+## Contribuindo
+
+Se você quiser contribuir para este projeto, siga estas etapas:
+
+- Faça um fork do projeto
+- Crie sua própria branch (git checkout -b feature/sua-feature)
+- Faça commit das suas alterações (git commit -am 'Adicione uma nova feature')
+- Faça push para a branch (git push origin feature/sua-feature)
+- Crie um novo Pull Request
+
+
